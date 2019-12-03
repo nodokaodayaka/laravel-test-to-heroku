@@ -15,6 +15,13 @@
         <div class="flex-center position-ref full-height">
             <form method="post" action="result">
                 @csrf
+                <h3>Q1</h3>
+                <li>answer 1</li>
+                <li>answer 2</li>
+                <li>answer 3</li>
+                <li>answer 4</li>
+
+                <button type="submit">回答</button>
 
                 @foreach($list as $item)
                     <h3>{{ $item->name }}</h3>
@@ -22,9 +29,6 @@
                         <li>{{ $answer->id }}</li>
                     @endforeach
                 @endforeach
-
-                <button type="submit">回答</button>
-
             </form>
         </div>
     </body>

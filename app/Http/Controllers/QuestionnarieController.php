@@ -28,7 +28,7 @@ class QuestionnarieController extends Controller
         // TODO get a randam present item
 
         // TODO get a randam present item image
-        $image = (base64_encode(Storage::disk('public')->get('cartman.jpg')));
+//        $image = (base64_encode(Storage::disk('public')->get('cartman.jpg')));
 
         // TODO set a image & statement
 
