@@ -33,7 +33,8 @@ class QuestionnarieController extends Controller
         // TODO set a image & statement
 
         $request->session()->regenerateToken();
-        return view('result')->with(['image' => $image, 'recieved_number' => $recieved_number]);
+//        return view('result')->with(['image' => $image, 'recieved_number' => $recieved_number]);
+        return view('result');
     }
 
     public function list(Request $request)

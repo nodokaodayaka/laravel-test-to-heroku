@@ -1,5 +1,4 @@
 result
 {{ __('welcome') }}
-{{ $recieved_number }}
+{{--{{ $recieved_number }}--}}
 
-<img src="data:image/png;base64,{{ $image }}">
