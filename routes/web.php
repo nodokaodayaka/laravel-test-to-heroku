@@ -11,8 +11,8 @@
 |
 */
 
-Route::post('/result', "QuestionnarieController@result");
-Route::get('/', "QuestionnarieController@index");
+Route::get('/{locale?}/home', "QuestionnarieController@index");
+Route::post('/{locale}/result', "QuestionnarieController@result");
 
 Route::any('/{any}', function(){
     abort(404);

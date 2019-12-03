@@ -11,6 +11,7 @@
 
     </head>
     <body>
+        {{ __('welcome') }}
         <div class="flex-center position-ref full-height">
             <form method="post" action="result">
                 @csrf
