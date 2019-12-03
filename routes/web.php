@@ -13,6 +13,7 @@
 
 Route::get('/{locale?}/home', "QuestionnarieController@index");
 Route::post('/{locale}/result', "QuestionnarieController@result");
+Route::get('/admin/list', "QuestionnarieController@list");
 
 Route::any('/{any}', function(){
     abort(404);
