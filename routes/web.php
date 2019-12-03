@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::post('/result', "QuestionnarieController@result");
+Route::get('/', "QuestionnarieController@index");
+
+Route::any('/{any}', function(){
+    abort(404);
 });
